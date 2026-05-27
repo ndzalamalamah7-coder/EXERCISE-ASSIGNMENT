@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <!-- base href="https://portal.brightlearn.co.za/" -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="BrightLearn learning platform.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="BrightLearn">
+  <link rel="apple-touch-icon" href="https://portal.brightlearn.co.za/icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://portal.brightlearn.co.za/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  
+
+  <title>BrightLearn</title>
+  <link rel="manifest" href="https://portal.brightlearn.co.za/manifest.json">
+
+<script type="application/javascript" src="SQL%20exersise%20questions_files/main.dart.js"></script><meta name="generator" content="Flutter"><meta flt-viewport="" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta id="flutterweb-theme" name="theme-color" content="rgba(0,0,0,0)"></head>
+
+<body flt-embedding="full-page" style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none;" flt-renderer="canvaskit" flt-build-mode="release" spellcheck="false"><flt-semantics-placeholder role="button" aria-live="polite" tabindex="0" aria-label="Enable accessibility" style="position: absolute; left: -1px; top: -1px; width: 1px; height: 1px;"></flt-semantics-placeholder>
+  <style>
+    
+    :root {
+      --bg: #F9FAFB;
+      --surface: #FFFFFF;
+      --text: #111827;
+      --muted: #4B5563;
+      --border: #E5E7EB;
+      --accent: #F07F2A;
+    }
+
+    body {
+      background:
+        radial-gradient(780px 480px at 18% 12%, rgba(15, 118, 110, 0.12), transparent 60%),
+        radial-gradient(620px 380px at 82% 8%, rgba(17, 94, 89, 0.1), transparent 60%),
+        var(--bg);
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      inset: 0px;
+      overflow: hidden;
+      padding: 0px;
+      margin: 0px;
+      user-select: none;
+      touch-action: none;
+      font-family: "Helvetica", "Arial", sans-serif;
+    }
+
+    .main-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.4s ease-out;
+    }
+
+    .splash {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      animation: logo-pop 1.2s ease-in-out infinite;
+    }
+
+    .slogan {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .loader {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 14px;
+    }
+
+    .loader span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.2;
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+
+    .loader span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .loader span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes pulse {
+      0%, 80%, 100% {
+        opacity: 0.2;
+        transform: scale(0.9);
+      }
+      40% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes logo-pop {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      35% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      70% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(0px);
+      }
+    }
+  </style>
+  <div class="main-content" id="loader-content" style="opacity: 0;">
+    <div class="splash" role="status" aria-live="polite">
+      <img class="logo" src="SQL%20exersise%20questions_files/brightlearn_logo.svg" alt="BrightLearn logo" onerror="this.onerror=null;this.src='/assets/logo.png';">
+      <div class="slogan">Learning made bright.</div>
+      <div class="loader" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <script src="SQL%20exersise%20questions_files/flutter_bootstrap.js" async=""></script>
+
+
+
+<p aria-hidden="true" style="position: fixed; bottom: 100%; visibility: hidden; opacity: 0; pointer-events: none; width: auto; height: auto; white-space: nowrap; line-height: 9999px; letter-spacing: 9999px; word-spacing: 9999px; margin: 0px 0px 9999px;">flutter typography measurement</p><flt-announcement-host><flt-announcement-polite style="position: fixed; overflow: hidden; transform: translate(-99999px, -99999px); width: 1px; height: 1px;" aria-live="polite"></flt-announcement-polite><flt-announcement-assertive style="position: fixed; overflow: hidden; transform: translate(-99999px, -99999px); width: 1px; height: 1px;" aria-live="assertive"></flt-announcement-assertive></flt-announcement-host><flt-image-picker-inputs id="__image_picker_web-file-input"></flt-image-picker-inputs><flutter-view style="position: absolute; inset: 0px; width: 1280px; height: 631.333px;" flt-view-id="0" tabindex="0"><flt-glass-pane><flt-platform-view id="flt-pv-0" slot="flt-pv-slot-0" aria-hidden="true"><iframe src="SQL%20exersise%20questions_files/1779385425626_BrightLearn_Exercise_1_SQL_Fundamentals_002.pdf" style="border: 0px; width: 100%; height: 100%;" allowfullscreen=""></iframe></flt-platform-view></flt-glass-pane><flt-text-editing-host></flt-text-editing-host><flt-semantics-host style="position: absolute; transform-origin: 0px 0px 0px; transform: scale(0.666667);"></flt-semantics-host><style id="flt-text-editing-stylesheet">flutter-view flt-scene-host {  font: normal normal 14px sans-serif;}flutter-view flt-semantics input[type=range] {  appearance: none;  -webkit-appearance: none;  width: 100%;  position: absolute;  border: none;  top: 0;  right: 0;  bottom: 0;  left: 0;}flutter-view input::selection {  background-color: transparent;}flutter-view textarea::selection {  background-color: transparent;}flutter-view flt-semantics input,flutter-view flt-semantics textarea,flutter-view flt-semantics [contentEditable="true"] {  caret-color: transparent;}flutter-view .flt-text-editing::placeholder {  opacity: 0;}flutter-view:focus { outline: rgb(0, 0, 0) none 0px;}flutter-view flt-paragraph,flutter-view flt-span {  line-height: 100%;}</style></flutter-view></body></html>
